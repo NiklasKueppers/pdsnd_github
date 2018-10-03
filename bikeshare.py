@@ -8,6 +8,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 #### other functions #####
+# functions should be migrated to seperate file...
 
 #check data type and print first/last rows
 def check_type(input):
@@ -28,8 +29,9 @@ def load_data():
     data = data.append(data3, ignore_index=True, sort=True)
     return data
 
-# Arrange data2
+# Arrange data
 def arrange_data(data):
+    #this is not nicly done currently
     data.drop(['Unnamed: 0'], axis=1, inplace=True)
 
     data['Start Time'] = pd.to_datetime(data['Start Time'])
@@ -100,7 +102,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 # User defined Colors
 colors = {
-        'text': '#009999',
+        'text': '#009990',
         'mark': '#990000',
         'nrml' : '#009988',
         'pie1' : '#cc6110',
