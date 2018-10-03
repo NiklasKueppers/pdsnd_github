@@ -13,8 +13,8 @@ from dash.dependencies import Input, Output
 #check data type and print first/last rows
 def check_type(input):
     print(input.dtypes)
-    print(input.head(5))
-    print(input.tail(5))
+    print(input.head(6))
+    print(input.tail(6))
 
 # Load all csvs and append them
 def load_data():
