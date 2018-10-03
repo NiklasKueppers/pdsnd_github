@@ -101,7 +101,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 
 # User defined Colors
 colors = {
-        'text': '#009999',
+        'text': '#009990',
         'mark': '#990000',
         'nrml' : '#009988',
         'pie1' : '#cc6110',
