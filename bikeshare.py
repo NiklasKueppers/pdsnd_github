@@ -8,6 +8,7 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 
 #### other functions #####
+# functions should be migrated to seperate file...
 
 #check data type and print first/last rows
 def check_type(input):
