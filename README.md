@@ -5,7 +5,7 @@
 Explore US Bikeshare Data
 
 ### Description
-Analyse some bikeshare data
+Analyse some bikeshare data. Data will be displayed on your localhost.
 
 ### Files used
 chicago.csv
