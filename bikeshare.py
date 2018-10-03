@@ -28,8 +28,9 @@ def load_data():
     data = data.append(data3, ignore_index=True, sort=True)
     return data
 
-# Arrange data2
+# Arrange data
 def arrange_data(data):
+    #this is not nicly done currently
     data.drop(['Unnamed: 0'], axis=1, inplace=True)
 
     data['Start Time'] = pd.to_datetime(data['Start Time'])
